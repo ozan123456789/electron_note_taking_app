@@ -4,7 +4,6 @@ Electron ve Vue.js kullanılarak geliştirilmiş, basit ve kullanışlı bir not
 
 ## Özellikler
 
-- 🌓 Karanlık/Aydınlık tema desteği ve tema tercihi hatırlama
 - 💾 Notları otomatik kaydetme ve yerel depolama
 - 📝 Basit ve kullanıcı dostu arayüz
 - 🗑️ Not silme özelliği
