@@ -1,0 +1,15 @@
+{
+  "name": "electron_note_taking_app",
+  "version": "1.0.0",
+  "description": "Electron.js ile Not Uygulaması",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^35.0.0"
+  },
+  "dependencies": {
+    "electron-store": "^10.0.1"
+  }
+}

@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Uygulaması</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.36/dist/vue.global.prod.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Not Uygulaması</h1>
+        
+        <!-- Not listesi -->
+        <div class="notes-list">
+            <ul>
+                <li v-for="(note, index) in notes" :key="index">
+                    <span>{{ note }}</span>
+                    <button @click="deleteNote(index)">Sil</button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Not ekleme bölümü -->
+        <div class="note-input-section">
+            <textarea v-model="newNote" placeholder="Bir not gir..."></textarea>
+            <button class="save-btn" @click="saveNote">Kaydet</button>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
